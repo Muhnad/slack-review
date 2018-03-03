@@ -1,0 +1,37 @@
+{
+  "name": "slack-review",
+  "version": "1.0.0",
+  "description": "Post the opened Pull request to Slack channel.",
+  "author": "Muhannad Abdelrazek <muhnad.abdelrazek@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/Muhnad/slack-review.git",
+  "homepage": "https://github.com/Muhnad/slack-review#readme",
+  "bugs": "https://github.com/Muhnad/slack-review/issues",
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "keywords": [
+    "probot",
+    "pull request",
+    "slack",
+    "code review",
+    "team review"
+  ],
+  "scripts": {
+    "start": "probot run ./index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "probot": "^5.0.0",
+    "query-string": "^5.1.0"
+  },
+  "devDependencies": {
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": "8",
+    "npm": ">= 4.0.0"
+  }
+}
