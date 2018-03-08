@@ -2,8 +2,9 @@
 
 > Open Pull request from GitHub and will be automatically posted to slack review channel.
 
+![slack review example](https://i.imgur.com/nTOlGjH.png)
 
-## Local setup
+## Setup
 
  - Setup:
 
@@ -14,19 +15,31 @@
 
     npm install
   ```
- - Generate [Slack token](https://api.slack.com/custom-integrations/legacy-tokens)
- - open file `src/constant.js`.
- - Update the `SLACK_TOKEN` with your token.
- - Set the `SLACK_CHANNEL` with your code review channel name. **Note** Must add `#` before channel name.
- - You need to Create your own [GitHub app](https://probot.github.io/docs/development/#configure-a-github-app)
- - Update the `.env` file.
-
- - Run `npm start`
+ - **Generate** [Slack token](https://api.slack.com/custom-integrations/legacy-tokens)
+ - **Open** file `src/constant.js`.
+ - **Update** the `SLACK_TOKEN` with your token.
+ - **Set** the `SLACK_CHANNEL` with your code review channel name. **Note** Must add `#` before channel name.
+ - **Create** your own [GitHub app](https://probot.github.io/docs/development/#configure-a-github-app)
+ - **Update** the `.env` file.
+ - **Run** `npm start`
 
 
 ## Usage
 - Install the app on your GitHub Repositories.
-- Start Open Pull request from GitHub and will be automatically posted to slack review channel. 
+- Start Open Pull request from GitHub and will be automatically posted to slack review channel.
+
+**Notes**
+
+
+ the app by default run on port 3000, if you need to change the port just `PORT=NUMBER HERE npm start`
+
+ Example of running app on port 5000:
+
+ ```bash
+  PORT=5000 npm start
+ ```
+
+ if you need the app run in Background just add `&` at the end `npm start &`
 
 
 ## Deployment
