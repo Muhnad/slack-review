@@ -30,14 +30,7 @@
 
 **Notes**
 
-
- the app by default run on port 3000, if you need to change the port just `PORT=NUMBER HERE npm start`
-
- Example of running app on port 5000:
-
- ```bash
-  PORT=5000 npm start
- ```
+ the app by default run on port 3004, if you need to change the port just edit the `.env` file.
 
  if you need the app run in Background just add `&` at the end `npm start &`
 
